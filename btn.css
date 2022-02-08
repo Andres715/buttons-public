@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Main Class */
+
+.btn {
+    min-height: 1ch;
+    min-width: 1ch;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    outline: none;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: box-shadow .3s;
+}
+
+.fs-1 {
+    font-size: 1rem;
+}
+
+.fs-2 {
+    font-size: 2rem;
+}
+
+.fs-3 {
+    font-size: 3rem;
+}
+
+
+/* InLeft */
+
+.btn-InLeft {
+    position: relative;
+}
+
+.btn-InLeft:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: 0;
+    border-radius: 0.25rem;
+    transition: width .5s;
+}
+
+.btn-InLeft:after {
+    position: absolute;
+    content: attr(title);
+    left: 0;
+    right: 0;
+}
+
+.btn-InLeft:hover:before {
+    width: 100%;
+}
+
+
+/* InRight */
+
+.btn-InRight {
+    position: relative;
+}
+
+.btn-InRight:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    margin: 0;
+    border-radius: 0.25rem;
+    transition: width .5s;
+}
+
+.btn-InRight:after {
+    position: absolute;
+    content: attr(title);
+    left: 0;
+    right: 0;
+}
+
+.btn-InRight:hover:before {
+    width: 100%;
+}
+
+
+/* InCenterX */
+
+.btn-InCenterX {
+    position: relative;
+}
+
+.btn-InCenterX::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    width: 0;
+    margin: 0;
+    border-radius: 0.25rem;
+    transition: all .5s;
+}
+
+.btn-InCenterX:after {
+    position: absolute;
+    content: attr(title);
+    left: 0;
+    right: 0;
+}
+
+.btn-InCenterX:hover:before {
+    left: 0;
+    width: 100%;
+}
+
+
+/* InTop */
+
+.btn-InTop {
+    position: relative;
+}
+
+.btn-InTop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    margin: 0;
+    border-radius: 0.25rem;
+    transition: all .5s;
+}
+
+.btn-InTop::after {
+    position: absolute;
+    content: attr(title);
+    left: 0;
+    right: 0;
+}
+
+.btn-InTop:hover:before {
+    height: 100%;
+}
+
+
+/* InBottom */
+
+.btn-InBottom {
+    position: relative;
+}
+
+.btn-InBottom::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    margin: 0;
+    border-radius: 0.25rem;
+    transition: all .5s;
+}
+
+.btn-InBottom::after {
+    position: absolute;
+    content: attr(title);
+    left: 0;
+    right: 0;
+}
+
+.btn-InBottom:hover:before {
+    height: 100%;
+}
+
+
+/* InCenterY */
+
+.btn-InCenterY {
+    position: relative;
+}
+
+.btn-InCenterY:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 0;
+    border-radius: 0.25rem;
+    transition: all .5s;
+}
+
+.btn-InCenterY:after {
+    position: absolute;
+    content: attr(title);
+    left: 0;
+    right: 0;
+}
+
+.btn-InCenterY:hover:before {
+    height: 100%;
+    top: 0;
+}
+
+
+/* InCenterCircle */
+
+.btn-InCenterCircle {
+    position: relative;
+}
+
+.btn-InCenterCircle:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    clip-path: circle(0% at 50% 50%);
+    border-radius: 0.25rem;
+    transition: all .9s;
+}
+
+.btn-InCenterCircle::after {
+    position: absolute;
+    content: attr(title);
+    left: 0;
+    right: 0;
+}
+
+.btn-InCenterCircle:hover:before {
+    clip-path: circle(100% at 50% 50%);
+}
+
+
+/* InLeft & InRight */
+
+.btn-InLeftInRight {
+    position: relative;
+}
+
+.btn-InLeftInRight:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    border-radius: 0.25rem;
+    transition: all .7s;
+}
+
+.btn-InLeftInRight:after {
+    position: absolute;
+    content: attr(title);
+    left: 0;
+    right: 0;
+}
+
+.btn-InLeftInRight:hover:before {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 50% 0, 50% 100%, 50% 100%, 50% 0);
+}

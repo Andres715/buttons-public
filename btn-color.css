@@ -1,0 +1,130 @@
+:root {
+    --blue: #5e42b1;
+    --blue-light: rgba(94, 66, 177, .5);
+    --blue-dark: #533f9e;
+    --blue1: #324695;
+    --blue1-light: rgba(50, 70, 149, .5);
+    --blue1-dark: #2a3c84;
+    --purple: #7052ff;
+    --purple-light: rgba(112, 82, 255, .5);
+    --purple-dark: #462fc4;
+    --purple1: #d06aff;
+    --purple1-light: rgba(208, 106, 255, .5);
+    --purple1-dark: #953fc5;
+    --purple2: #5a2a69;
+    --purple2-light: rgba(75, 28, 90, .5);
+    --purple2-dark: #4b1c5a;
+    --purple3: #713ae9;
+    --purple3-light: rgba(113, 58, 233, .5);
+    --purple3-dark: #451faf;
+    --pink: #ff81ff;
+    --pink-light: rgba(255, 129, 255, .5);
+    --pink-dark: #eb70eb;
+    --pink1: #fcdacf;
+    --pink1-light: rgba(252, 218, 207, .5);
+    --pink1-dark: #e9c7bc;
+}
+
+.btn-blue {
+    background-color: var(--blue);
+    color: #ffffff;
+}
+
+.btn-blue:focus {
+    box-shadow: .025ch .025ch 0px .3rem var(--blue-light);
+}
+
+.btn-blue::before {
+    background-color: var(--blue-dark);
+}
+
+.btn-blue-1 {
+    background-color: var(--blue1);
+    color: #ffffff;
+}
+
+.btn-blue-1:focus {
+    box-shadow: .025ch .025ch 0px .3rem var(--blue1-light);
+}
+
+.btn-blue-1::before {
+    background-color: var(--blue1-dark);
+}
+
+.btn-purple {
+    background-color: var(--purple);
+    color: #ffffff;
+}
+
+.btn-purple:focus {
+    box-shadow: .025ch .025ch 0px .3rem var(--purple-light);
+}
+
+.btn-purple::before {
+    background-color: var(--purple-dark);
+}
+
+.btn-purple-1 {
+    background-color: var(--purple1);
+    color: #ffffff;
+}
+
+.btn-purple-1:focus {
+    box-shadow: .025ch .025ch 0px .3rem var(--purple1-light);
+}
+
+.btn-purple-1::before {
+    background-color: var(--purple1-dark);
+}
+
+.btn-purple-2 {
+    background-color: var(--purple2);
+    color: #ffffff;
+}
+
+.btn-purple-2:focus {
+    box-shadow: .025ch .025ch 0px .3rem var(--purple2-light);
+}
+
+.btn-purple-2::before {
+    background-color: var(--purple2-dark);
+}
+
+.btn-purple-3 {
+    background-color: var(--purple3);
+    color: #ffffff;
+}
+
+.btn-purple-3:focus {
+    box-shadow: .025ch .025ch 0px .3rem var(--purple3-light);
+}
+
+.btn-purple-3::before {
+    background-color: var(--purple3-dark);
+}
+
+.btn-pink {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.btn-pink:focus {
+    box-shadow: .025ch .025ch 0px .3rem var(--pink-light);
+}
+
+.btn-pink::before {
+    background-color: var(--pink-dark);
+}
+
+.btn-pink-1 {
+    background-color: var(--pink1);
+    color: #000;
+}
+
+.btn-pink-1:focus {
+    box-shadow: .025ch .025ch 0px .3rem var(--pink1-light);
+}
+
+.btn-pink-1::before {
+    background-color: var(--pink1-dark);
+}
